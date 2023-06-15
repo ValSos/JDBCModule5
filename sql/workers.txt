@@ -1,0 +1,10 @@
+Petrenko Taras, 1998-04-26, Trainee, 500
+Dovhan Maxim, 2003-03-13, Junior, 1200
+Skrynnyk Kateryna, 1994-06-06, Middle, 2300
+Shevchenko Olha, 1991-12-24, Senior, 6000
+Dudnik Natalia, 1999-10-21, Trainee, 800
+Ivanenko Petro, 1995-05-25, Junior, 1000
+Melnik Dmytro, 2000-09-12, Middle, 1800
+Kolomiets Daryna, 1992-02-28, Senior, 7000
+Tkach Eygen, 2001-08-11, Trainee, 550
+Zubko Vasyl, 1988-09-23, Junior, 850

@@ -1,0 +1,60 @@
+2023-06-15 21:36:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "WORKER" уже существует
+Table "WORKER" already exists; SQL statement:
+CREATE TABLE worker (
+id IDENTITY PRIMARY KEY,
+name VARCHAR(1000) NOT NULL CHECK (LENGTH(name) >= 2),
+birthday DATE CHECK (birthday > '1900-12-31'),
+level VARCHAR(100) NOT NULL CHECK level IN ('Trainee', 'Junior', 'Middle', 'Senior'),
+salary INT CHECK (salary >= 100 AND salary <= 100000)
+) [42101-214]
+2023-06-15 21:36:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "WORKER" уже существует
+Table "WORKER" already exists; SQL statement:
+CREATE TABLE worker (
+id IDENTITY PRIMARY KEY,
+name VARCHAR(1000) NOT NULL CHECK (LENGTH(name) >= 2),
+birthday DATE CHECK (birthday > '1900-12-31'),
+level VARCHAR(100) NOT NULL CHECK level IN ('Trainee', 'Junior', 'Middle', 'Senior'),
+salary INT CHECK (salary >= 100 AND salary <= 100000)
+) [42101-214]
+2023-06-15 21:38:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "WORKER" уже существует
+Table "WORKER" already exists; SQL statement:
+CREATE TABLE worker (
+id IDENTITY PRIMARY KEY,
+name VARCHAR(1000) NOT NULL CHECK (LENGTH(name) >= 2),
+birthday DATE CHECK (birthday > '1900-12-31'),
+level VARCHAR(100) NOT NULL CHECK level IN ('Trainee', 'Junior', 'Middle', 'Senior'),
+salary INT CHECK (salary >= 100 AND salary <= 100000)
+) [42101-214]
+2023-06-15 21:43:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "WORKER" уже существует
+Table "WORKER" already exists; SQL statement:
+CREATE TABLE worker (
+id IDENTITY PRIMARY KEY,
+name VARCHAR(1000) NOT NULL CHECK (LENGTH(name) >= 2),
+birthday DATE CHECK (birthday > '1900-12-31'),
+level VARCHAR(100) NOT NULL CHECK level IN ('Trainee', 'Junior', 'Middle', 'Senior'),
+salary INT CHECK (salary >= 100 AND salary <= 100000)
+) [42101-214]
+2023-06-15 21:43:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "WORKER" уже существует
+Table "WORKER" already exists; SQL statement:
+CREATE TABLE worker (
+id IDENTITY PRIMARY KEY,
+name VARCHAR(1000) NOT NULL CHECK (LENGTH(name) >= 2),
+birthday DATE CHECK (birthday > '1900-12-31'),
+level VARCHAR(100) NOT NULL CHECK level IN ('Trainee', 'Junior', 'Middle', 'Senior'),
+salary INT CHECK (salary >= 100 AND salary <= 100000)
+) [42101-214]
+2023-06-15 21:49:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "WORKER" уже существует
+Table "WORKER" already exists; SQL statement:
+CREATE TABLE worker (
+id IDENTITY PRIMARY KEY,
+name VARCHAR(1000) NOT NULL CHECK (LENGTH(name) >= 2),
+birthday DATE CHECK (birthday > '1900-12-31'),
+level VARCHAR(100) NOT NULL CHECK level IN ('Trainee', 'Junior', 'Middle', 'Senior'),
+salary INT CHECK (salary >= 100 AND salary <= 100000)
+) [42101-214]
