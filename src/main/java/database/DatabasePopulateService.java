@@ -33,15 +33,11 @@ public class DatabasePopulateService {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] workerData = line.split(", ");
-                String name = workerData[0];
-                String birthday = workerData[1];
-                String level = workerData[2];
-                int salary = Integer.parseInt(workerData[3]);
 
-                preparedStatement.setString(1, name);
-                preparedStatement.setString(2, birthday);
-                preparedStatement.setString(3, level);
-                preparedStatement.setInt(4, salary);
+                preparedStatement.setString(1, workerData[0]);
+                preparedStatement.setString(2, workerData[1]);
+                preparedStatement.setString(3, workerData[2]);
+                preparedStatement.setInt(4, Integer.parseInt(workerData[3]));
 
                 preparedStatement.executeUpdate();
             }
@@ -56,10 +52,7 @@ public class DatabasePopulateService {
              BufferedReader reader = new BufferedReader(new FileReader(CLIENT_FILE))){
             String line;
             while ((line = reader.readLine()) != null) {
-                String name = line;
-
-                preparedStatement.setString(1, name);
-
+                preparedStatement.setString(1, line);
                 preparedStatement.executeUpdate();
             }
         }
@@ -74,15 +67,11 @@ public class DatabasePopulateService {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] projectData = line.split(", ");
-                String name = projectData[0];
-                int client_id = Integer.parseInt(projectData[1]);
-                String start_date = projectData[2];
-                String finish_date = projectData[3];
 
-                preparedStatement.setString(1, name);
-                preparedStatement.setInt(2, client_id);
-                preparedStatement.setString(3, start_date);
-                preparedStatement.setString(4, finish_date);
+                preparedStatement.setString(1, projectData[0]);
+                preparedStatement.setInt(2, Integer.parseInt(projectData[1]));
+                preparedStatement.setString(3, projectData[2]);
+                preparedStatement.setString(4, projectData[3]);
 
                 preparedStatement.executeUpdate();
             }
@@ -98,11 +87,9 @@ public class DatabasePopulateService {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] projectWorkerData = line.split(",");
-                int project_id = Integer.parseInt(projectWorkerData[0]);
-                int worker_id = Integer.parseInt(projectWorkerData[1]);
 
-                preparedStatement.setInt(1, project_id);
-                preparedStatement.setInt(2, worker_id);
+                preparedStatement.setInt(1, Integer.parseInt(projectWorkerData[0]));
+                preparedStatement.setInt(2, Integer.parseInt(projectWorkerData[1]));
 
                 preparedStatement.executeUpdate();
             }
