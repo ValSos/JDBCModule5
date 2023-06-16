@@ -37,6 +37,13 @@ public class DatabasePopulateService {
                 String birthday = workerData[1];
                 String level = workerData[2];
                 int salary = Integer.parseInt(workerData[3]);
+
+                preparedStatement.setString(1, name);
+                preparedStatement.setString(2, birthday);
+                preparedStatement.setString(3, level);
+                preparedStatement.setInt(4, salary);
+
+                preparedStatement.executeUpdate();
             }
         }
         catch (IOException | SQLException e) {
@@ -50,6 +57,10 @@ public class DatabasePopulateService {
             String line;
             while ((line = reader.readLine()) != null) {
                 String name = line;
+
+                preparedStatement.setString(1, name);
+
+                preparedStatement.executeUpdate();
             }
         }
         catch (IOException | SQLException e) {
@@ -67,6 +78,13 @@ public class DatabasePopulateService {
                 int client_id = Integer.parseInt(projectData[1]);
                 String start_date = projectData[2];
                 String finish_date = projectData[3];
+
+                preparedStatement.setString(1, name);
+                preparedStatement.setInt(2, client_id);
+                preparedStatement.setString(3, start_date);
+                preparedStatement.setString(4, finish_date);
+
+                preparedStatement.executeUpdate();
             }
         }
         catch (IOException | SQLException e) {
@@ -82,6 +100,11 @@ public class DatabasePopulateService {
                 String[] projectWorkerData = line.split(",");
                 int project_id = Integer.parseInt(projectWorkerData[0]);
                 int worker_id = Integer.parseInt(projectWorkerData[1]);
+
+                preparedStatement.setInt(1, project_id);
+                preparedStatement.setInt(2, worker_id);
+
+                preparedStatement.executeUpdate();
             }
         }
         catch (IOException | SQLException e) {

@@ -7,16 +7,19 @@ import java.sql.SQLException;
 
 public class DatabaseTest {
     public static void main(String[] args) throws SQLException, FileNotFoundException {
-        DatabaseInitService databaseInitService = new DatabaseInitService();
-        databaseInitService.databaseInit();
 
-        DatabasePopulateService databasePopulateService = new DatabasePopulateService();
-        databasePopulateService.insertWorkers();
-        databasePopulateService.insertProject();
-        databasePopulateService.insertClient();
-        databasePopulateService.insertProjectWorker();
+        PrintAllClients printAllClients = new PrintAllClients();
+        printAllClients.printAllClients();
+/*        DatabaseInitService databaseInitService = new DatabaseInitService();
+        databaseInitService.databaseInit();*/
 
-/*        DatabaseQueryService databaseQueryService = new DatabaseQueryService();
+        //DatabasePopulateService databasePopulateService = new DatabasePopulateService();
+/*        databasePopulateService.insertWorkers();
+        databasePopulateService.insertClient();*/
+        //databasePopulateService.insertProject();
+/*        databasePopulateService.insertProjectWorker();
+
+        DatabaseQueryService databaseQueryService = new DatabaseQueryService();
         databaseQueryService.findMaxProjectsClient();
         databaseQueryService.findLongestProject();
         databaseQueryService.findYoungestAndEldestWorkers();
